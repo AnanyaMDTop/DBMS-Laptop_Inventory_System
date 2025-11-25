@@ -3,6 +3,9 @@ import Employees from "./Employees";
 import Vendors from "./Vendors";
 import Departments from "./Departments";
 import Laptops from "./Laptops";
+import LaptopAssignments from "./laptopassignments";
+import Maintenance from "./maintenance";
+
 
 export default function Dashboard() {
   const [page, setPage] = useState("dashboard");
@@ -21,6 +24,8 @@ export default function Dashboard() {
         <button className="btn btn-outline-secondary" onClick={() => setPage("vendors")}>Vendors</button>
         <button className="btn btn-outline-secondary" onClick={() => setPage("departments")}>Departments</button>
         <button className="btn btn-outline-secondary" onClick={() => setPage("laptops")}>Laptops</button>
+        <button className="btn btn-outline-secondary" onClick={() => setPage("laptopAssignments")}>Laptop Assignments</button>
+        <button className="btn btn-outline-secondary" onClick={() => setPage("maintenance")}>Maintenance</button>
         <button className="btn btn-outline-secondary" onClick={() => setPage("dashboard")}>Overview</button>
       </div>
 
@@ -35,6 +40,9 @@ export default function Dashboard() {
         {page === "vendors" && <Vendors />}
         {page === "departments" && <Departments />}
         {page === "laptops" && <Laptops />}
+        {page === "laptopAssignments" && <LaptopAssignments />}
+        {page === "maintenance" && <Maintenance />}
+
       </div>
     </div>
   );

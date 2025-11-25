@@ -7,7 +7,8 @@ import employees from "./routes/employees.js";
 import vendors from "./routes/vendors.js";
 import departments from "./routes/departments.js";
 import laptops from "./routes/laptops.js";
-
+import laptopAssignments from "./routes/laptopAssignments.js";
+import maintenance from "./routes/maintenance.js";
 
 dotenv.config();
 
@@ -21,7 +22,8 @@ app.use("/api/employees", employees);
 app.use("/api/vendors", vendors);
 app.use("/api/departments", departments);
 app.use("/api/laptops", laptops);
-
+app.use("/api/laptopAssignments", laptopAssignments);
+app.use("/api/maintenance", maintenance);
 
 const PORT = 5000;
 app.listen(PORT, () => console.log(`🚀 Backend running at http://localhost:${PORT}`));
