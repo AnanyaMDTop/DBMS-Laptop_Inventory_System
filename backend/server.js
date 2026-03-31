@@ -7,7 +7,7 @@ import employees from "./routes/employees.js";
 import vendors from "./routes/vendors.js";
 import departments from "./routes/departments.js";
 import laptops from "./routes/laptops.js";
-import laptopAssignments from "./routes/laptopAssignments.js";
+import laptopAssignments from "./routes/laptopassignments.js";
 import maintenance from "./routes/maintenance.js";
 
 dotenv.config();
